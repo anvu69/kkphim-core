@@ -85,9 +85,9 @@ class InstallCommand extends Command
         $this->newLine(1);
 
 
-        $this->call('migrate', $this->option('no-interaction') ? ['--no-interaction' => true] : []);
-        $this->progressBar->advance();
-        $this->newLine(1);
+        // $this->call('migrate', $this->option('no-interaction') ? ['--no-interaction' => true] : []);
+        // $this->progressBar->advance();
+        // $this->newLine(1);
 
         $this->call('backpack:publish-middleware');
         $this->progressBar->advance();
@@ -110,29 +110,29 @@ class InstallCommand extends Command
         $this->progressBar->advance();
         $this->newLine(1);
 
-        $this->call('db:seed', [
-            'class' => SettingsTableSeeder::class,
-        ]);
-        $this->progressBar->advance();
-        $this->newLine(1);
+        // $this->call('db:seed', [
+        //     'class' => SettingsTableSeeder::class,
+        // ]);
+        // $this->progressBar->advance();
+        // $this->newLine(1);
 
-        $this->call('db:seed', [
-            'class' => CatalogsTableSeeder::class,
-        ]);
-        $this->progressBar->advance();
-        $this->newLine(1);
+        // $this->call('db:seed', [
+        //     'class' => CatalogsTableSeeder::class,
+        // ]);
+        // $this->progressBar->advance();
+        // $this->newLine(1);
 
-        $this->call('db:seed', [
-            'class' => MenusTableSeeder::class,
-        ]);
-        $this->progressBar->advance();
-        $this->newLine(1);
+        // $this->call('db:seed', [
+        //     'class' => MenusTableSeeder::class,
+        // ]);
+        // $this->progressBar->advance();
+        // $this->newLine(1);
 
-        $this->call('db:seed', [
-            'class' => PermissionsSeeder::class,
-        ]);
-        $this->progressBar->advance();
-        $this->newLine(1);
+        // $this->call('db:seed', [
+        //     'class' => PermissionsSeeder::class,
+        // ]);
+        // $this->progressBar->advance();
+        // $this->newLine(1);
 
         $this->progressBar->finish();
         $this->newLine(1);
