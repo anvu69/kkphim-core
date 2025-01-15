@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'version' => explode('@', \PackageVersions\Versions::getVersion('haiau009/kkphim-core') ?? 0)[0],
+    'version' => explode('@', \PackageVersions\Versions::getVersion('anvu69/kkphim-core') ?? 0)[0],
     'episodes' => [
         'types' => [
             'embed' => 'Nhúng',
